@@ -1,34 +1,52 @@
-# Python Directory and File Brute-Forcing Tool
+### `README.md`
 
-This tool is designed for ethical penetration testing of web servers to brute-force directories and files. It uses various techniques to evade detection, such as rotating proxies, human-like delays, and random user-agents. The script attempts to discover hidden directories and files on the target server, including those with critical extensions like `.bak`, `.config`, `.passwd`, and more.
+
+```markdown
+# WWW-FoRcE
+
+**WWW-FoRcE** is a Python-based tool designed for directory and file brute-forcing on web servers. It can test proxies, use random user-agents, and include delays to mimic human behavior and reduce detectability. This tool is useful for penetration testers and security researchers to discover hidden resources on web applications.
 
 ## Features
-- **Rotating Proxies**: Automatically rotates through a list of proxies to avoid IP blocking.
-- **Random User-Agent**: Uses random user-agent headers to simulate requests from different browsers/devices.
-- **Human-like Delay**: Adds random delays between requests to mimic human behavior.
-- **Critical Extensions**: Bruteforces important extensions such as `.bak`, `.backup`, `.old`, `.sql`, and `.passwd`.
 
-## Ethical Usage
-This tool is intended for ethical use. Always ensure you have explicit permission to test a system. Unauthorized use of brute-forcing tools may violate legal and ethical standards.
+- **Directory and File Brute-Forcing**: Automatically test common directories and files on a target URL.
+- **Proxy Support**: Test proxies before starting brute-forcing and use them to avoid IP blocking.
+- **Random User-Agents**: Use randomized user-agent strings to avoid detection.
+- **Human-like Delays**: Introduce delays between requests to simulate human browsing behavior.
+- **Status Code Reporting**: Provides detailed feedback on the HTTP status codes received.
 
-## Requirements
-- Python 3.x
-- `requests` library for making HTTP requests.
-- `fake_useragent` library for randomizing user agents.
+## Installation
 
-### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/bohmiiidd/NSForce.git
-    cd NSForce
-    ```
-
-2. Install the required Python libraries:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Usage
+To get started with WWW-FoRcE, you'll need to install the required Python packages. Create a `requirements.txt` file with the following content and use `pip` to install them:
 
 ```bash
-python NSForce.py
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. **Prepare Your Environment**: Ensure you have Python 3 installed and the necessary packages listed in `requirements.txt`.
+
+2. **Run the Tool**: Execute the script and follow the prompts to input the target URL, wordlist path, and any additional options for proxy, user-agent, and delay.
+
+   ```bash
+   python www_force.py
+   ```
+
+3. **Input Options**: You'll be prompted to enter:
+   - Target URL (e.g., `http://example.com`)
+   - Path to wordlist
+   - Whether to use a proxy, random user-agent, and delay
+
+4. **Results**: The script will display found directories and files, and report proxy functionality.
+
+## License
+
+This tool is provided as-is for educational and research purposes. Use it responsibly and ensure you have permission to test the target systems.
+
+## Disclaimer
+
+WWW-FoRcE is intended for ethical use only. Unauthorized access to systems without permission is illegal and unethical. Always obtain proper authorization before performing security testing.
+
+```
+
+Feel free to adjust the content to better fit your needs!
