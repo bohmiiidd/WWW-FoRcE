@@ -1,7 +1,3 @@
-### `README.md`
-
-
-```markdown
 # WWW-FoRcE
 
 **WWW-FoRcE** is a Python-based tool designed for directory and file brute-forcing on web servers. It can test proxies, use random user-agents, and include delays to mimic human behavior and reduce detectability. This tool is useful for penetration testers and security researchers to discover hidden resources on web applications.
